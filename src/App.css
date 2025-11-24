@@ -1,0 +1,207 @@
+.eb-bill-calculator {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #f0fbff;
+  border: 2px solid #aee3fd;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #bbb;
+  text-align: center;
+}
+
+.calc-heading {
+  padding:15px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: wheat;
+}
+/* 
+.calc-subtitle {
+  font-size: 15px;
+  margin-bottom: 30px;
+  color: wheat;
+} */
+
+.calc-display-box {
+  margin-bottom: 10px;
+}
+
+.calc-display {
+  width: 100%;
+  font-size: 30px;
+  padding: 5px;
+  border: 3px solid #000000;
+  background-color: darkcyan;
+  color: white;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.key-btn {
+  padding: 15px;
+  font-size: 20px;
+  background-color: darkcyan;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.key-btn:hover {
+  background-color: lightseagreen;
+}
+
+.final-calc-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: darkcyan;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* 
+.bill-output {
+  margin-top: 20px;
+   margin-bottom: -30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: wheat;
+  
+}  */
+.eb-bill-calculator {
+  color: white;
+  background-image: url('./fuse.png');
+  background-size:cover;
+  /* scale: calc(1.1); */
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px;
+  margin: 0;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  max-width: 400px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  border: 2px solid #5f6f5a;
+  width: 90%;
+}
+
+.eb-bill-calculator::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* 🎨 dark overlay */
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.calc-heading,
+.calc-subtitle,
+.bill-output {
+  margin-top:5px;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bolder;
+font-size: larger;
+}
+
+.calc-display {
+  background: black;
+  color: #fff;
+  border: 3px solid white;
+}
+
+.key-btn {
+  background-color: rgba(209, 202, 201, 0.979);
+  color: black;
+}
+
+.final-calc-btn {
+  background-color: darkgoldenrod;
+  color: white;
+}
+.unit-back {
+  display: flex;
+  justify-content: center;
+  background-image: url(./circuit.jpg);
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  position: relative; 
+  z-index: 1;
+}
+
+
+.unit-back::before{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  background-color: rgba(14, 11, 11, 0.5); /* Semi-transparent black */
+  z-index: -1; /* Put behind all content */
+}
+
+.eb-bill-calculator {
+  animation: fadeZoomIn 0.8s ease-in-out;
+}
+
+@keyframes fadeZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.eb-bill-calculator:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+  transition: box-shadow 0.4s ease-in-out;
+}
+.key-btn {
+  transition: transform 0.1s ease, background-color 0.3s ease;
+}
+
+.key-btn:active {
+  transform: scale(0.9);
+  background-color: lightseagreen;
+}
+.eb-bill-calculator {
+  animation: floatEffect 4s ease-in-out infinite;
+}
+
+@keyframes floatEffect {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
